@@ -50,6 +50,7 @@ $ ssh-keygen
 $ ssh-copy-id master@<ip-del-master>
 $ ssh-copy-id worker@<ip-del-worker>
 ```
+<img width="426" height="349" alt="image" src="https://github.com/user-attachments/assets/80aad254-5ca5-4031-bbc0-1e496d28cc41" />
 
 ---
 
@@ -77,6 +78,7 @@ $ nano /etc/hosts
 10.43.97.145  cadcliente02.javeriana.edu.co  cadcliente02
 10.43.97.149  cad02-nfs01.javeriana.edu.co   cad02-nfs01
 ```
+<img width="771" height="400" alt="image" src="https://github.com/user-attachments/assets/8301e7fa-2023-49e3-8288-7a129d14bf98" />
 
 ---
 
@@ -100,6 +102,7 @@ $ sudo nano /etc/exports
 # Agregar la siguiente línea:
 /nfs/condor <ip_cliente>(rw,no_root_squash,subtree_check,fsid=0)
 ```
+<img width="542" height="726" alt="image" src="https://github.com/user-attachments/assets/10ebdbe0-76de-4881-92cd-da003598d7fe" />
 
 ---
 
@@ -120,6 +123,7 @@ $ sudo systemctl enable nfs-server
 $ sudo systemctl start nfs-server
 $ sudo systemctl status nfs-server
 ```
+<img width="775" height="361" alt="image" src="https://github.com/user-attachments/assets/48fc0751-0f65-479d-80ec-59727a1c3e94" />
 
 ---
 
@@ -145,6 +149,7 @@ $ mount 10.43.97.149:/nfs/condor /nfs/condor
 ```bash
 $ df -h
 ```
+<img width="776" height="389" alt="image" src="https://github.com/user-attachments/assets/bf7b01ed-5ed7-4ff7-88f7-1dc160691422" />
 
 ---
 
@@ -172,6 +177,7 @@ $ mv spark-3.5.2-bin-hadoop3 Spark
 $ sudo dnf install openjdk-8-jdk-headless
 $ java -version
 ```
+<img width="770" height="328" alt="image" src="https://github.com/user-attachments/assets/388fab1b-c8b3-4722-b44c-e3f79f52e52e" />
 
 ---
 
@@ -208,6 +214,7 @@ export PYSPARK_DRIVER_PYTHON="/usr/local/bin/python3"
 $ source .bashrc
 $ env | grep -i SPARK
 ```
+<img width="777" height="329" alt="image" src="https://github.com/user-attachments/assets/5e593b6e-e6fa-48d4-8f83-e69cf092bde6" />
 
 ---
 
@@ -260,6 +267,7 @@ cadhead02
 $ sudo dnf -y install java-1.8.0-openjdk-devel
 $ jps
 ```
+<img width="714" height="109" alt="image" src="https://github.com/user-attachments/assets/57ee4e36-af4c-4d7b-81d7-b80c4c1db5e9" />
 
 ---
 
@@ -286,7 +294,8 @@ $ jps
 http://10.43.103.45:8080
 ```
 
-> **Resultado:** La interfaz web del Spark Master confirmó 5 workers en estado **ALIVE**, con un total de 20 cores y 60 GB de memoria disponibles.
+<img width="783" height="412" alt="image" src="https://github.com/user-attachments/assets/ce4f41a2-a418-448f-97a5-a5d58767fa92" />
+
 
 ---
 
